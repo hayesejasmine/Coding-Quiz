@@ -1,0 +1,113 @@
+*{
+    margin:1%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ 
+h1,h2 {
+    text-align: center;
+}
+ 
+li {
+    list-style: none;
+}
+ .countdown {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .countdown button{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: rgb(192, 100, 192);
+  }
+
+  .countdown p {
+    float: right;
+  }
+
+  header {
+    display: none; 
+  }
+
+
+  main {
+    display: none;
+  }
+ 
+.headcontainer, main {
+    margin-top: 100px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+.headcontainer button, main button {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(57, 33, 110);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;   
+}
+
+.headcontainer button:active, main button:active, .headcontainer button:hover, main button:hover {
+    background-color: rgb(192, 100, 192);
+    cursor: pointer;
+}
+
+.headcontainer p {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: -35px; 
+}
+  
+.Questions{
+    display: none;
+}
+
+.all-done {
+ display: none;
+}
+
+.all-done h2, .all-done p, .all-done div{
+    display: block;
+    text-align: left;
+    padding-left: 300px;
+}
+
+.all-done div button{
+    display: inline;
+    font-size: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+  
+.all-done div button:active, .all-done div button:hover{
+    background-color: rgb(192, 100, 192);
+    cursor: pointer;
+}
+
+.high-scores h2, .high-scores ol{
+    display: block;
+    text-align: left;
+    padding-left: 300px;  
+}
+
+
+#Go-back{
+    font-size: 12px;
+    display: inline-block;
+     
+}
+
+#Clear-high-scores {
+    font-size: 12px;
+    display: inline-block; 
+    margin-left: 5px; 
+    margin-right: 570px;
+}
