@@ -9,59 +9,81 @@
   </head>
 
   <body>
-    <div class= "countdown">
-      <button>View high scores</button>
-      <p> Timer: 00:00 </p>
-    </div>
-
     <header>
-      <div class="headcontainer">
-        <h1>Coding Quiz Challenge</h1>
-      <p>Try to answer the following code-related questions within the time limit.
-      <br>Keep in mind that incorrect answers will penalize your score/time
-      <br>by ten seconds!
-    </p>
-    <button>Start Quiz</button>
+    <div class= "header">
+      <div> 
+      <button class="button" id="scores_chk">View high scores</button>
+    </div>
+    <div> 
+      <p id="timer"> Time: 75 seconds </p>
+    </div>
+</header>
+
+<main>
+  <div>
+    <section class="initial_pg" id="initial_pg">
+<div id="introduction">
+  <h1>
+    Coding Quiz Challenge
+  </h1>
+<p id="about_quiz">
+    Try to answer the following code-related questions within the time limit.
+    <br>Keep in mind that incorrect answers will penalize your score/time
+    <br>by ten seconds!
+</p>
+<button class="button" id="start_quiz"> Start Quiz</button>
+</div>
+    </section>
+
+
+    <section class="questions" id="questions">
+      <div>
+        <div>
+          <h2 id = "ask_q">Ask the question</h2>
+          <ol>
+            <li><button class ="choices button" id="answer_btn1" value="1">Answer1</button></li>
+            <li><button class ="choices button" id="answer_btn2" value="2">Answer2</button></li>
+            <li><button class ="choices button" id="answer_btn3" value="3">Answer3</button></li>
+            <li><button class ="choices button" id="answer_btn4" value="4">Answer4</button></li>
+          </ol>
+        </div>
       </div>
-    </header>
 
 
-    <main>
-      <script src="Assets/script.js"></script>
-<section class= "Questions" >
-  <h2>Question</h2>
-<ul>
-    <li><button>Answer 1</button></li>
-    <li><button>Answer 2</button></li>
-    <li><button>Answer 3</button></li>
-    <li><button>Answer 4</button></li>
-</ul>
-</section>
-
-<section class="all-done">
-  <h2>All done!</h2>
-  <p>Your final score is 00.</p>
-<div>
-    <label for="">Enter Initials:</label>
-    <input type="text">
-    <button>Submit</button>
+<div id="result-line">
+  <p>Answer results!</p>
 </div>
 </section>
 
-<section class="high-scores">
-  <h2>High scores</h2>
-  <ol>
-    <li>JH - 21</li>
-    <li>JH - 21</li>
-    <li>JH - 21</li>
-    <li>JH - 21</li>
-    <li>JH - 21</li>
-    <li>JH - 21</li>
-  </ol>
-  <button id= "Go-back"> Go back </button>
-  <button id= "Clear-high-scores"> Clear high scores</button>
+
+<section class="submission" id="submission">
+  <div>
+    <h2 id="all-done">All Done!</h2>
+    <p id="final_score">Your final score is: </p>
+    <p>Enter initials
+<input id="inital">
+<button class="button" id="submission-btn">Submit</button>
+</p>
+  </div>
 </section>
 
-    </main>
-  </body>
+
+<section class="high-scores" id="high-scores">
+  <div>
+    <h2>High Scores</h2>
+    <div id="record-score"><p>Your record</p></div>
+    <div>
+      <button class="button" id="goback-btn">Go back</button>
+      <button class="button" id="clearhigh-btn">Clear high scores</button>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+<script src="Assets/script.js"></script>
+</body>
 </html>
+
+
+
+ 

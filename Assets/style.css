@@ -1,51 +1,53 @@
+/* Global style attributes*/
 *{
     margin:1%;
     padding: 0%;
     box-sizing: border-box;
 }
- 
-h1,h2 {
+
+h1,h2{
     text-align: center;
 }
- 
-li {
-    list-style: none;
-}
- .countdown {
-    font-size: 20px;
-    margin-right: 20px;
+
+/* First intro page styling*/
+.header {
+    text-align: right;
+    display: flex;
+    flex-direction: column;  
   }
 
-  .countdown button{
+  .header button {
     background-color: white;
     border: none;
     font-size: 20px;
     color: rgb(192, 100, 192);
+    float: left;
   }
 
-  .countdown p {
-    float: right;
+  .header button:hover{
+    cursor: pointer;
   }
 
-  header {
-    display: none; 
+  .header p {
+        float: right;
+        margin-top: -40px;
+        font-size: 20px;
+      }
+  
+  .scores_chk{
+    font-size: 20px;
   }
 
-
-  main {
-    display: none;
-  }
- 
-.headcontainer, main {
-    margin-top: 100px;
+.initial_pg{
     width: 100%;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 100px;
   }
 
-.headcontainer button, main button {
+  .initial_pg button {
     display: block;
     margin: 0 auto;
     background-color: rgb(57, 33, 110);
@@ -55,59 +57,102 @@ li {
     border-radius: 5px;   
 }
 
-.headcontainer button:active, main button:active, .headcontainer button:hover, main button:hover {
+
+.initial_pg button:active, .initial_pg button:hover{
     background-color: rgb(192, 100, 192);
     cursor: pointer;
 }
 
-.headcontainer p {
+.initial_pg p {
         text-align: center;
         font-size: 20px;
         padding-bottom: -35px; 
 }
+
+.initial_pg{
   
-.Questions{
-    display: none;
 }
 
-.all-done {
- display: none;
+/* Quiz page styling*/
+.questions h2{
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 
-.all-done h2, .all-done p, .all-done div{
+.questions button{
+    text-align: left;
+    margin-right: 920px;
+    font-size: 18px;
+    width: 200px;
+    background-color: rgb(57, 33, 110);
+    color: white;
+    border-radius: 5px; 
+    padding-left: 10px;
+    margin-bottom: -15px;
+}
+
+.questions button:active, .questions button:hover{
+    background-color: rgb(192, 100, 192);
+    cursor: pointer;
+}
+    
+.questions, .submission, .record-score, #high-scores {
+    display:none;
+}
+
+li{
+    list-style: none;
+}
+
+#result-line{
+    text-align: right;
+}
+
+
+/* High score submission page*/
+.submission h2, .submission p, .submission div {
     display: block;
     text-align: left;
     padding-left: 300px;
+    margin-left: -200px;
+    padding-top: 18px;
 }
 
-.all-done div button{
-    display: inline;
-    font-size: 12px;
-    padding-left: 23px;
-    padding-right: 23px;
+.submission button{
+    background-color: rgb(57, 33, 110);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
-  
-.all-done div button:active, .all-done div button:hover{
+
+.submission div button:active, .submission div button:hover {
     background-color: rgb(192, 100, 192);
     cursor: pointer;
 }
 
-.high-scores h2, .high-scores ol{
+
+/* High Score page*/
+.high-scores h2{
+    text-align: left;
+    margin-top: 90px;
+}
+.high-scores{
     display: block;
     text-align: left;
     padding-left: 300px;  
 }
 
-
-#Go-back{
-    font-size: 12px;
-    display: inline-block;
-     
+#goback-btn, #clearhigh-btn {
+    background-color: rgb(57, 33, 110);
+    color: white;  
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-#Clear-high-scores {
-    font-size: 12px;
-    display: inline-block; 
-    margin-left: 5px; 
-    margin-right: 570px;
-}
+#goback-btn:active, #clearhigh-btn:active,  #goback-btn:hover, #clearhigh-btn:hover{
+    background-color: rgb(192, 100, 192);
+    cursor: pointer;
+} 
