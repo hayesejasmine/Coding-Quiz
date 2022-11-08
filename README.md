@@ -27,8 +27,8 @@ THEN I can save my initials and my score
 
 A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
 
-image.png
+https://user-images.githubusercontent.com/114713151/200472354-fb85daba-3bca-43ad-8a87-ef03c170fb04.png
 
 ## Deployed Application
 
-https://hayesejasmine.github.io/Coding-Quiz/
+https://hayesejasmine.github.io/Coding-Quiz/index.html
